@@ -1,1 +1,31 @@
-{"name":"familyos","main":"worker/index.ts","compatibility_date":"2026-09-01","assets":{"not_found_handling":"single-page-application","run_worker_first":["/api/*"]},"d1_databases":[{"binding":"DB","database_name":"familyos-db","database_id":"REPLACE_WITH_D1_DATABASE_ID","migrations_dir":"migrations"}],"r2_buckets":[{"binding":"FAMILYOS_FILES","bucket_name":"familyos-files"}],"vars":{"NVIDIA_TEXT_MODEL":"nvidia/nemotron-3.5-lightning-30b-a3b","NVIDIA_VISION_MODEL":"nvidia/nemotron-3-nano-omni-30b-a3b-reasoning"}}
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "familyos",
+  "main": "./worker.ts",
+  "compatibility_date": "2026-09-27",
+  "assets": {
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": [
+      "/api/*"
+    ]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "familyos-db",
+      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "FAMILYOS_FILES",
+      "bucket_name": "familyos-files"
+    }
+  ],
+  "vars": {
+    "NVIDIA_TEXT_MODEL": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "NVIDIA_VISION_MODEL": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning"
+  }
+}

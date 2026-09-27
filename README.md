@@ -1,3 +1,7 @@
+# FamilyOS — GitHub Mobile Edition
+
+> Si despliegas desde Android, empieza por `DEPLOY-ANDROID.md`. Esta variante mantiene los archivos fuente en la raíz para evitar que GitHub móvil omita carpetas.
+
 # FamilyOS — Cloudflare
 
 FamilyOS es una PWA privada para administrar dinero, pagos, metas, compras, tareas, eventos, documentos y un asistente familiar llamado Nemo. El frontend es React + TypeScript + Vite + Tailwind CSS y el backend es un Cloudflare Worker con D1 y R2.

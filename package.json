@@ -1,1 +1,40 @@
-{"name":"familyos-cloudflare","private":true,"version":"1.0.0","type":"module","scripts":{"dev":"vite","build":"vite build","typecheck":"tsc --noEmit","lint":"eslint .","test":"vitest run","deploy":"npm run build && wrangler deploy","db:migrate:local":"wrangler d1 migrations apply DB --local","db:migrate:remote":"wrangler d1 migrations apply DB --remote","seed:demo":"wrangler d1 execute DB --local --file=./scripts/demo-seed.sql"},"dependencies":{"@cloudflare/vite-plugin":"latest","@vitejs/plugin-react":"latest","vite":"latest","react":"latest","react-dom":"latest","lucide-react":"latest"},"devDependencies":{"@cloudflare/workers-types":"latest","@eslint/js":"latest","@types/react":"latest","@types/react-dom":"latest","eslint":"latest","eslint-plugin-react-hooks":"latest","globals":"latest","typescript":"latest","typescript-eslint":"latest","vitest":"latest"}}
+{
+  "name": "familyos-cloudflare",
+  "private": true,
+  "version": "1.0.1-mobile",
+  "type": "module",
+  "packageManager": "npm@10.9.2",
+  "scripts": {
+    "prepare:files": "node prepare-project.mjs",
+    "dev": "node prepare-project.mjs && vite",
+    "build": "node prepare-project.mjs && vite build",
+    "typecheck": "node prepare-project.mjs && tsc --noEmit",
+    "lint": "node prepare-project.mjs && eslint .",
+    "test": "node prepare-project.mjs && vitest run",
+    "deploy": "node prepare-project.mjs && npm run build && wrangler deploy",
+    "db:migrate:local": "node prepare-project.mjs && wrangler d1 migrations apply DB --local",
+    "db:migrate:remote": "node prepare-project.mjs && wrangler d1 migrations apply DB --remote",
+    "seed:demo": "node prepare-project.mjs && wrangler d1 execute DB --local --file=./demo-seed.sql"
+  },
+  "dependencies": {
+    "lucide-react": "1.48.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.61.0",
+    "@cloudflare/workers-types": "5.20260927.1",
+    "@eslint/js": "10.0.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "eslint": "10.11.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "17.12.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.70.1",
+    "vite": "8.3.1",
+    "vitest": "5.0.2",
+    "wrangler": "latest"
+  }
+}
