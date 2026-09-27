@@ -1,0 +1,2 @@
+-- OPTIONAL LOCAL TEST SEED ONLY. Intentionally contains no users because password hashes must be generated through onboarding.
+-- Run only with: npm run seed:demo

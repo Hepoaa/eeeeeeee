@@ -1,0 +1,1 @@
+-- Categories are created for each new family by the setup transaction; no global/demo rows are inserted.
