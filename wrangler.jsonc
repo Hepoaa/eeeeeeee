@@ -14,7 +14,7 @@
     {
       "binding": "DB",
       "database_name": "familyos-db",
-      "database_id": "REPLACE_WITH_D1_DATABASE_ID",
+      "database_id": "12345678-abcd-1234-abcd-123456789abc"",
       "migrations_dir": "migrations"
     }
   ],
